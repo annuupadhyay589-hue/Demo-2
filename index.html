@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM Store</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+<nav class="navbar">
+
+        <!-- Menu Button -->
+        <button id="menuBtn" class="nav-btn">
+            ☰
+        </button>
+
+        <!-- EM Logo -->
+        <div class="logo">
+            <span>EM</span>
+        </div>
+
+        <!-- Admin Button -->
+        <button id="adminBtn" class="nav-btn">
+            ⚙
+        </button>
+  <!-- Side Menu -->
+
+
+
+
+</nav>
+    </header>
+<div id="menuOverlay" class="menu-overlay" onclick="closeMenu()"></div>
+
+<div id="sideMenu">
+
+    <h2>EM STORE</h2>
+
+
+    <button onclick="aboutUs()">
+        ℹ️ About
+    </button>
+
+    <button onclick="showProducts()">
+        🏏 Products
+    </button>
+
+    <button onclick="contactUs()">
+        📞 Contact Us
+    </button>
+
+    <button onclick="openInstagram()">
+        📸 Instagram
+    </button>
+
+    <button onclick="openYoutube()">
+        ▶️ YouTube
+    </button>
+  <div class="menu-header">
+
+    
+
+    <button id="closeMenuBtn" onclick="closeMenu()">
+        ✕
+    </button>
+
+  </div>
+</div>
+  
+
+    <!-- ================= HERO SLIDER ================= -->
+
+<section class="hero-section">
+
+    <div class="swiper heroSwiper">
+
+        <div class="swiper-wrapper" id="sliderWrapper">
+
+            <!-- Backend se slider images yahan load hongi -->
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+    </div>
+
+</section>
+
+    <!-- Categories -->
+    <section id="categories">
+
+    </section>
+
+    <!-- Products -->
+    <!-- =========================================
+             PRODUCTS SECTION
+========================================= -->
+
+<section id="products">
+
+    <!-- Cricket Bat -->
+
+    <section class="category-section" id="Cricketbat">
+
+        <div class="category-header">
+
+            <h2>
+                Cricket Bat
+                <span>➜</span>
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="Cricketbatproducts">
+
+            <!-- Backend Products -->
+
+        </div>
+
+    </section>
+
+    <!-- Cricket Gloves -->
+
+    <section class="category-section" id="Cricketgloves">
+
+        <div class="category-header">
+
+            <h2>
+
+                Cricket Gloves
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="Cricketglovesproducts">
+
+        </div>
+
+    </section>
+
+    <!-- Batting Pad -->
+
+    <section class="category-section" id="Battingpad">
+
+        <div class="category-header">
+
+            <h2>
+
+                Batting Pad
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="Battingpadproducts"></div>
+
+    </section>
+
+    <!-- WK Gloves -->
+
+    <section class="category-section" id="WKgloves">
+
+        <div class="category-header">
+
+            <h2>
+
+                WK Gloves
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="WKglovesproducts"></div>
+
+    </section>
+
+    <!-- WK Pad -->
+
+    <section class="category-section" id="WKpad">
+
+        <div class="category-header">
+
+            <h2>
+
+                WK Pad
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="WKpadproducts"></div>
+
+    </section>
+
+    <!-- Helmet -->
+
+    <section class="category-section" id="Helmet">
+
+        <div class="category-header">
+
+            <h2>
+
+                Helmet
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="HelmetProducts"></div>
+
+    </section>
+
+    <!-- Kit Bag -->
+
+    <section class="category-section" id="KitBag">
+
+        <div class="category-header">
+
+            <h2>
+
+                Kit Bag
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="KitBagProducts"></div>
+
+    </section>
+
+    <!-- Tennis Bat -->
+
+    <section class="category-section" id="TennisBat">
+
+        <div class="category-header">
+
+            <h2>
+
+                Tennis Bat
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="TennisBatProducts"></div>
+
+    </section>
+
+    <!-- Abdo Guard -->
+
+    <section class="category-section" id="AbdoGuard">
+
+        <div class="category-header">
+
+            <h2>
+
+                Abdo Guard
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="AbdoGuardProducts"></div>
+
+    </section>
+
+    <!-- Thigh Guard -->
+
+    <section class="category-section" id="Thighguard">
+
+        <div class="category-header">
+
+            <h2>
+
+                Thigh Guard
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="ThighGuardProducts"></div>
+
+    </section>
+
+    <!-- Elbow Guard -->
+
+    <section class="category-section" id="ElbowGuard">
+
+        <div class="category-header">
+
+            <h2>
+
+                Elbow Guard
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="ElbowGuardProducts"></div>
+
+    </section>
+
+    <!-- Batting Inner -->
+
+    <section class="category-section" id="BattingInner">
+
+        <div class="category-header">
+
+            <h2>
+
+                Batting Inner
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="BattingInnerProducts"></div>
+
+    </section>
+
+    <!-- WK Inner -->
+
+    <section class="category-section" id="WKInner">
+
+        <div class="category-header">
+
+            <h2>
+
+                WK Inner
+
+                <span>➜</span>
+
+            </h2>
+
+        </div>
+
+        <div class="products-row" id="WKInnerProducts"></div>
+
+    </section>
+
+</section>
+
+<!-- =======================
+      SIZE POPUP
+======================= -->
+
+<div id="sizeModal">
+
+</div>
+
+    <!-- Cart -->
+    <div id="cartModal">
+
+    </div>
+
+    <!-- Product Modal -->
+    <div id="productModal">
+
+    </div>
+
+    <!-- Admin Login -->
+    <div id="adminLoginModal">
+
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="adminPanel">
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
